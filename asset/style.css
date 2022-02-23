@@ -1,0 +1,601 @@
+body {
+    margin: 0;
+}
+#main {
+    position: relative;
+    
+    width: 1920px;
+    height: 1244px;
+    background: linear-gradient(292.77deg, #0E1C26 0%, #2A454B 52.6%, #294861 100%);
+}
+
+.image17 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;   
+    background: url('./img.png');
+    mix-blend-mode: overlay;
+
+}
+
+.rectangle310 {
+    position: absolute;
+    width: 1920px;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    
+    background: #000000;
+    opacity: 0.2;
+}
+.grid-48 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 40px;
+    top: 20px;
+}
+.vector-grid-48 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+.group-grid-48 {
+    position: absolute;
+    left: 4.17%;
+    right: 4.17%;
+    top: 4.17%;
+    bottom: 4.17%;
+}
+.vector:nth-child(1) {
+    position: absolute;
+    left: 70.83%;
+    right: 4.17%;
+    top: 70.83%;
+    bottom: 4.17%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(2) {
+    position: absolute;
+    left: 70.83%;
+    right: 4.17%;
+    top: 37.5%;
+    bottom: 37.5%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(3) {
+    position: absolute;
+    left: 70.83%;
+    right: 4.17%;
+    top: 4.17%;
+    bottom: 70.83%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(4) {
+    position: absolute;
+    left: 37.5%;
+    right: 37.5%;
+    top: 70.83%;
+    bottom: 4.17%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(5) {
+    position: absolute;
+    left: 37.5%;
+    right: 37.5%;
+    top: 37.5%;
+    bottom: 37.5%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(6) {
+    position: absolute;
+    left: 37.5%;
+    right: 37.5%;
+    top: 4.17%;
+    bottom: 70.83%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(7) {
+    position: absolute;
+    left: 4.17%;
+    right: 70.83%;
+    top: 70.83%;
+    bottom: 4.17%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(8) {
+    position: absolute;
+    left: 4.17%;
+    right: 70.83%;
+    top: 37.5%;
+    bottom: 37.5%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.vector:nth-child(9) {
+    position: absolute;
+    left: 4.17%;
+    right: 70.83%;
+    top: 4.17%;
+    bottom: 70.83%;
+    background: #34AAFF;
+    border-radius: 0.8px;
+}
+.logo{
+    position: absolute;
+    width: 160px;
+    height: 28px;
+    left: 88px;
+    top: 18px;
+}
+.alarm-bell {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 1569px;
+    top: 22px;
+    
+}
+.group{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 1615px;
+    top: 20px;
+}
+.welcome{
+    position: absolute;
+    width: 205px;
+    height: 18px;
+    left: 1651px;
+    top: 25px;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.vnfd {
+    position: absolute;
+    width: 131px;
+    height: 48px;
+    left: 40px;
+    top: 94px;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.group530 {
+    position: absolute;
+    width: 405px;
+    height: 1032px;
+    left: 40px;
+    top: 172px;
+    
+}
+
+.rectangle325 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    /* Lime/Lime7 */
+    
+    background: #74B816;
+    opacity: 0.5;
+    border-radius: 12px 0px 0px 12px;
+}
+.icon-settings-user {
+    position: absolute;
+    left: 48.89%;
+    right: 46.17%;
+    top: 29.75%;
+    bottom: 68.31%;
+    
+    opacity: 0.7;
+}
+.icon-monitor {
+    position: absolute;
+    left: 23.21%;
+    right: 71.85%;
+    top: 29.75%;
+    bottom: 68.31%;
+    
+    opacity: 0.7;
+}
+.icon-image {
+    position: absolute;
+    left: 36.05%;
+    right: 59.01%;
+    top: 29.75%;
+    bottom: 68.31%;
+    
+    opacity: 0.7;
+}
+.icon-desktop {
+    position: absolute;
+    left: 10.37%;
+    right: 84.69%;
+    top: 29.75%;
+    bottom: 68.31%;
+    
+    opacity: 0.7;
+}
+.icon-settings {
+    position: absolute;
+    left: 61.73%;
+    right: 33.33%;
+    top: 29.75%;
+    bottom: 68.31%;
+    
+    opacity: 0.7;
+}
+.vnfm-1 {
+    position: absolute;
+    left: 48.64%;
+    right: 19.01%;
+    top: 15.02%;
+    bottom: 73.35%;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    
+    
+    color: #FFFFFF;
+}
+.software {
+    position: absolute;
+    left: 10.37%;
+    right: 59.26%;
+    top: 15.02%;
+    bottom: 73.35%;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    
+    
+    color: #FFFFFF;
+}
+.viettel {
+    position: absolute;
+    left: 48.64%;
+    right: 38.77%;
+    top: 3.39%;
+    bottom: 84.98%;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    
+    
+    color: #FFFFFF;
+}
+.idvnf {
+    position: absolute;
+    left: 10.37%;
+    right: 57.04%;
+    top: 3.39%;
+    bottom: 84.98%;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    
+    
+    color: #FFFFFF;
+}
+.main-centent {
+    position: absolute;
+    width: 1435px;
+    height: 1032px;
+    left: 445px;
+    top: 172px;
+}
+.rectangle324{
+    position: absolute;
+    width: 1435px;
+    height: 1032px;
+    left: 0px;
+    top: 0px;
+    
+    /* Gray/Gray-9 */
+    
+    background: #212529;
+    opacity: 0.6;
+    border-radius: 0px 12px 12px 10px;
+}
+.flavour {
+    position: absolute;
+    width: 99px;
+    height: 39px;
+    left: 40px;
+    top: 35px;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    opacity: 0.4;
+}
+.vnfindicator {
+    position: absolute;
+    width: 183px;
+    height: 39px;
+    left: 1212px;
+    top: 35px;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #FFFFFF;
+    
+    opacity: 0.4;
+}
+.vdu {
+    position: absolute;
+    width: 81px;
+    height: 48px;
+    left: 677px;
+    top: 30px;
+    
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.icon-search {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1270px;
+    top: 89px;
+}
+.icon-list {
+    position: absolute;
+    left: 92.61%;
+    right: 5.85%;
+    top: 9.5%;
+    bottom: 88.37%;
+}
+.icon-part {
+    position: absolute;
+    left: 95.68%;
+    right: 2.79%;
+    top: 9.5%;
+    bottom: 88.37%;
+}
+.group1158 {
+    position: absolute;
+    width: 327px;
+    height: 215px;
+    left: 40px;
+    top: 172px;
+    
+}
+.rectangle356{
+    position: absolute;
+    width: 327px;
+    height: 215px;
+    left: 0px;
+    top: 0px;
+    background: #343A40;
+    opacity: 0.6;
+    border-radius: 6px;
+}
+.frame412 {
+    /* position: absolute; */
+    width: 327px;
+    height: 215px;
+    left: 40px;
+    top: 172px;
+    
+}
+.ribbon {
+    position: absolute;
+    width: 154.64px;
+    height: 40px;
+    left: -1px;
+    top: 18px;
+    
+}
+.nfvo1 {
+    position: absolute;
+    width: 53px;
+    height: 24px;
+    left: 17px;
+    top: 10px;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.group1157 {
+    position: absolute;
+    width: 154.64px;
+    height: 40px;
+    left: -1px; 
+}
+
+.cpt-monitor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 173px;
+    top: 144px;
+    
+    opacity: 0.6;
+}
+.cpt-ram1 {
+    position: absolute;
+    left: 5.5%;
+    right: 88.38%;
+    top: 66.98%;
+    bottom: 23.72%;
+    opacity: 0.6;
+}
+.cpt-chip1 {
+    position: absolute;
+    left: 5.2%;
+    right: 88.69%;
+    top: 45.12%;
+    bottom: 45.58%;
+    opacity: 0.6;
+}
+.cpt-hd {
+    position: absolute;
+    left: 52.91%;
+    right: 40.98%;
+    top: 45.12%;
+    bottom: 45.58%;
+    
+    opacity: 0.6;
+}
+.i04 {
+    position: absolute;
+    left: 62.69%;
+    right: 31.19%;
+    top: 67.44%;
+    bottom: 24.19%;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.i1tbhdd {
+    position: absolute;
+    left: 62.69%;
+    right: 17.74%;
+    top: 46.51%;
+    bottom: 45.12%;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px; 
+    text-align: center;
+    color: #FFFFFF; 
+}
+.i1vcpu1 {
+    position: absolute;
+    left: 14.98%;
+    right: 59.94%;
+    top: 46.51%;
+    bottom: 45.12%;
+    
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    
+    opacity: 0.9;
+}
+.i1vcpu2 {
+position: absolute;
+left: 14.98%;
+right: 59.94%;
+top: 67.44%;
+bottom: 24.19%;
+
+font-family: SF Pro Text;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+opacity: 0.9;
+
+}
+.group11582{
+    position: absolute;
+    width: 327px;
+    height: 215px;
+    left: 383px;
+    top: 172px;
+}
+.group11583{
+    position: absolute;
+    width: 327px;
+    height: 215px;
+    left: 726px;
+    top: 172px;
+}
+.group11584{
+    position: absolute;
+    width: 327px;
+    height: 215px;
+    left: 1069px;
+    top: 172px;
+    
+}
