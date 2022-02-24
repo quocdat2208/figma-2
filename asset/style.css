@@ -1,263 +1,114 @@
 body {
     margin: 0;
 }
-#main {
+.main {
     position: relative;
-    
     width: 1920px;
     height: 1244px;
-    background: linear-gradient(292.77deg, #0E1C26 0%, #2A454B 52.6%, #294861 100%);
+    /* background: linear-gradient(292.77deg, #0E1C26 0%, #2A454B 52.6%, #294861 100%); */
 }
-
 .image17 {
-    position: absolute;
     width: 100%;
     height: 100%;
     left: 0px;
     top: 0px;   
     background: url('./img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
     mix-blend-mode: overlay;
 
 }
-
-.rectangle310 {
-    position: absolute;
-    width: 1920px;
-    height: 64px;
-    left: 0px;
-    top: 0px;
-    
-    background: #000000;
-    opacity: 0.2;
+.header-content { 
+    display:flex;
+    width: 100%;
+    height:64px;
+    background: rgba(0, 0, 0, 0.2);
 }
 .grid-48 {
-    position: absolute;
+
     width: 24px;
     height: 24px;
-    left: 40px;
-    top: 20px;
-}
-.vector-grid-48 {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-}
-.group-grid-48 {
-    position: absolute;
-    left: 4.17%;
-    right: 4.17%;
-    top: 4.17%;
-    bottom: 4.17%;
-}
-.vector:nth-child(1) {
-    position: absolute;
-    left: 70.83%;
-    right: 4.17%;
-    top: 70.83%;
-    bottom: 4.17%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(2) {
-    position: absolute;
-    left: 70.83%;
-    right: 4.17%;
-    top: 37.5%;
-    bottom: 37.5%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(3) {
-    position: absolute;
-    left: 70.83%;
-    right: 4.17%;
-    top: 4.17%;
-    bottom: 70.83%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(4) {
-    position: absolute;
-    left: 37.5%;
-    right: 37.5%;
-    top: 70.83%;
-    bottom: 4.17%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(5) {
-    position: absolute;
-    left: 37.5%;
-    right: 37.5%;
-    top: 37.5%;
-    bottom: 37.5%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(6) {
-    position: absolute;
-    left: 37.5%;
-    right: 37.5%;
-    top: 4.17%;
-    bottom: 70.83%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(7) {
-    position: absolute;
-    left: 4.17%;
-    right: 70.83%;
-    top: 70.83%;
-    bottom: 4.17%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(8) {
-    position: absolute;
-    left: 4.17%;
-    right: 70.83%;
-    top: 37.5%;
-    bottom: 37.5%;
-    background: #34AAFF;
-    border-radius: 0.8px;
-}
-.vector:nth-child(9) {
-    position: absolute;
-    left: 4.17%;
-    right: 70.83%;
-    top: 4.17%;
-    bottom: 70.83%;
-    background: #34AAFF;
-    border-radius: 0.8px;
+    margin:20px 24px 20px 40px;
 }
 .logo{
-    position: absolute;
-    width: 160px;
-    height: 28px;
-    left: 88px;
-    top: 18px;
+    margin-top:18px;
+    /* flex: 1; */
 }
-.alarm-bell {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 1569px;
-    top: 22px;
-    
+.icon-header {
+    display: flex;
+    margin: 0 64px 0 1321px;
+    align-items: center;
 }
 .group{
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    left: 1615px;
-    top: 20px;
+     
+   margin-left: 24px;
+    
 }
 .welcome{
-    position: absolute;
-    width: 205px;
-    height: 18px;
-    left: 1651px;
-    top: 25px;
+     
+    margin-left: 8px;
     
     font-family: SF Pro Text;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
-    /* identical to box height */
     
     
     color: #FFFFFF;
 }
 .vnfd {
-    position: absolute;
-    width: 131px;
-    height: 48px;
-    left: 40px;
-    top: 94px;
-    
+     
+    margin: 30px 0px 30px 40px;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
-    /* identical to box height */
-    
-    
     color: #FFFFFF;
 }
-
+.content-all {
+    display:flex;
+    margin: 30px 40px 40px 40px;
+}
 .group530 {
-    position: absolute;
+    /* display: flex; */
     width: 405px;
     height: 1032px;
     left: 40px;
     top: 172px;
+    background: rgb(116 184 22 / 50%);
+    border-radius: 12px 0px 0px 12px;
+    flex-direction: row;
+}
+.group530-1 {
+    display: flex;
+}
+.icon-group530 {
+    display: flex;
+    margin: 32px 196px 0 42px;
+    /* justify-content: space-between; */
+}
+.icon-settings-user {
+    margin-right: 32px;
+    
+}
+.icon-monitor {
+    margin-right: 32px;
+    
+}
+.icon-image {
+    margin-right: 32px;
+    
+}
+.icon-desktop {
+     margin-right: 32px;
     
 }
 
-.rectangle325 {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    
-    /* Lime/Lime7 */
-    
-    background: #74B816;
-    opacity: 0.5;
-    border-radius: 12px 0px 0px 12px;
-}
-.icon-settings-user {
-    position: absolute;
-    left: 48.89%;
-    right: 46.17%;
-    top: 29.75%;
-    bottom: 68.31%;
-    
-    opacity: 0.7;
-}
-.icon-monitor {
-    position: absolute;
-    left: 23.21%;
-    right: 71.85%;
-    top: 29.75%;
-    bottom: 68.31%;
-    
-    opacity: 0.7;
-}
-.icon-image {
-    position: absolute;
-    left: 36.05%;
-    right: 59.01%;
-    top: 29.75%;
-    bottom: 68.31%;
-    
-    opacity: 0.7;
-}
-.icon-desktop {
-    position: absolute;
-    left: 10.37%;
-    right: 84.69%;
-    top: 29.75%;
-    bottom: 68.31%;
-    
-    opacity: 0.7;
-}
-.icon-settings {
-    position: absolute;
-    left: 61.73%;
-    right: 33.33%;
-    top: 29.75%;
-    bottom: 68.31%;
-    
-    opacity: 0.7;
-}
 .vnfm-1 {
-    position: absolute;
+     
     left: 48.64%;
     right: 19.01%;
     top: 15.02%;
@@ -274,7 +125,7 @@ body {
     color: #FFFFFF;
 }
 .software {
-    position: absolute;
+     
     left: 10.37%;
     right: 59.26%;
     top: 15.02%;
@@ -291,311 +142,134 @@ body {
     color: #FFFFFF;
 }
 .viettel {
-    position: absolute;
-    left: 48.64%;
-    right: 38.77%;
-    top: 3.39%;
-    bottom: 84.98%;
-    
+     
+    margin-top: 35px;
     font-family: SF Pro Text;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
     line-height: 40px;
-    /* or 267% */
-    
-    
     color: #FFFFFF;
 }
+.viettel-2{
+    margin-top: 10px;
+}
 .idvnf {
-    position: absolute;
-    left: 10.37%;
-    right: 57.04%;
-    top: 3.39%;
-    bottom: 84.98%;
-    
+    margin: 35px 23px 0 42px;
     font-family: SF Pro Text;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 40px;
-    /* or 267% */
-    
-    
     color: #FFFFFF;
 }
+.idvnf-1{
+    margin-bottom: 10px;
+}
+
 .main-centent {
-    position: absolute;
+    /* display: flex; */
     width: 1435px;
     height: 1032px;
     left: 445px;
     top: 172px;
-}
-.rectangle324{
-    position: absolute;
-    width: 1435px;
-    height: 1032px;
-    left: 0px;
-    top: 0px;
-    
-    /* Gray/Gray-9 */
-    
-    background: #212529;
-    opacity: 0.6;
+    background: rgb(33 37 41 / 60%);
     border-radius: 0px 12px 12px 10px;
 }
+.centent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px 15px 40px;
+}
+
 .flavour {
-    position: absolute;
-    width: 99px;
-    height: 39px;
-    left: 40px;
-    top: 35px;
-    
+
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 38px;
-    /* identical to box height */
-    
-    
-    color: #FFFFFF;
-    
-    opacity: 0.4;
+    color: rgb(255 255 255 / 40%);
 }
 .vnfindicator {
-    position: absolute;
-    width: 183px;
-    height: 39px;
-    left: 1212px;
-    top: 35px;
-    
+
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
     line-height: 38px;
-    /* identical to box height */
-    
     text-align: right;
-    
     color: #FFFFFF;
-    
-    opacity: 0.4;
 }
-.vdu {
-    position: absolute;
-    width: 81px;
-    height: 48px;
-    left: 677px;
-    top: 30px;
-    
+.vdu {    
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    line-height: 48px;
-    /* identical to box height */
-    
-    text-align: center;
-    
+    line-height: 48px; 
+    text-align: center; 
     color: #FFFFFF;
 }
-.icon-search {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 1270px;
-    top: 89px;
+.centent-icon {
+    display: flex;
+    margin: 15px 14px 0 1230px;
+    align-items: center;
 }
 .icon-list {
-    position: absolute;
-    left: 92.61%;
-    right: 5.85%;
-    top: 9.5%;
-    bottom: 88.37%;
+     margin-left: 20px;
 }
 .icon-part {
-    position: absolute;
-    left: 95.68%;
-    right: 2.79%;
-    top: 9.5%;
-    bottom: 88.37%;
+     margin-right: 40px;
+    margin-left:22px;
+}
+.centent-bottom {
+    display: flex;
+    margin: 52px 20px 0 20px;
 }
 .group1158 {
-    position: absolute;
-    width: 327px;
-    height: 215px;
     left: 40px;
     top: 172px;
-    
-}
-.rectangle356{
-    position: absolute;
-    width: 327px;
-    height: 215px;
-    left: 0px;
-    top: 0px;
-    background: #343A40;
-    opacity: 0.6;
-    border-radius: 6px;
-}
-.frame412 {
-    /* position: absolute; */
-    width: 327px;
-    height: 215px;
-    left: 40px;
-    top: 172px;
-    
+    background: rgb(52 58 64 / 60%);
+    border-radius: 6px; 
 }
 .ribbon {
-    position: absolute;
-    width: 154.64px;
-    height: 40px;
-    left: -1px;
-    top: 18px;
-    
-}
-.nfvo1 {
-    position: absolute;
-    width: 53px;
-    height: 24px;
-    left: 17px;
-    top: 10px;
-    
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height */
+    margin-top:18px;
+    display: inline-block;  
     
     
-    color: #FFFFFF;
 }
-.group1157 {
-    position: absolute;
-    width: 154.64px;
-    height: 40px;
-    left: -1px; 
+.group1158-mid,.group1158-bot{
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* margin-top: 39px;
+    margin-left: 17px;
+    margin-right: 58px;
+    margin-bottom: 28px; */
+    margin: 39px 58px 28px 17px;
 }
-
-.cpt-monitor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 173px;
-    top: 144px;
-    
-    opacity: 0.6;
+.i1vcpu1,.i1vcpu2 {
+    margin-left: 12px;
 }
-.cpt-ram1 {
-    position: absolute;
-    left: 5.5%;
-    right: 88.38%;
-    top: 66.98%;
-    bottom: 23.72%;
-    opacity: 0.6;
+.cpt-hd,.cpt-monitor {
+    margin-left: 42px;
 }
-.cpt-chip1 {
-    position: absolute;
-    left: 5.2%;
-    right: 88.69%;
-    top: 45.12%;
-    bottom: 45.58%;
-    opacity: 0.6;
+.i1tbhdd,.i04 {
+    margin-left: 12px;
 }
-.cpt-hd {
-    position: absolute;
-    left: 52.91%;
-    right: 40.98%;
-    top: 45.12%;
-    bottom: 45.58%;
-    
-    opacity: 0.6;
+.group1158-2{
+    margin-left: 16px;   
+    background: rgb(52 58 64 / 60%);
+    border-radius: 6px;         
 }
-.i04 {
-    position: absolute;
-    left: 62.69%;
-    right: 31.19%;
-    top: 67.44%;
-    bottom: 24.19%;
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
-    opacity: 0.6;
+.group1158-3{
+    margin-left: 16px;
+    background: rgb(52 58 64 / 60%);
+    border-radius: 6px;
 }
-.i1tbhdd {
-    position: absolute;
-    left: 62.69%;
-    right: 17.74%;
-    top: 46.51%;
-    bottom: 45.12%;
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px; 
-    text-align: center;
-    color: #FFFFFF; 
-}
-.i1vcpu1 {
-    position: absolute;
-    left: 14.98%;
-    right: 59.94%;
-    top: 46.51%;
-    bottom: 45.12%;
-    
-    font-family: SF Pro Text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
-    
-    opacity: 0.9;
-}
-.i1vcpu2 {
-position: absolute;
-left: 14.98%;
-right: 59.94%;
-top: 67.44%;
-bottom: 24.19%;
-
-font-family: SF Pro Text;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
-/* identical to box height */
-
-color: #FFFFFF;
-
-opacity: 0.9;
-
-}
-.group11582{
-    position: absolute;
-    width: 327px;
-    height: 215px;
-    left: 383px;
-    top: 172px;
-}
-.group11583{
-    position: absolute;
-    width: 327px;
-    height: 215px;
-    left: 726px;
-    top: 172px;
-}
-.group11584{
-    position: absolute;
-    width: 327px;
-    height: 215px;
-    left: 1069px;
-    top: 172px;
-    
+.group1158-4{
+    margin-left: 16px;
+    background: rgb(52 58 64 / 60%);
+    border-radius: 6px;
 }

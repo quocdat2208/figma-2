@@ -1,0 +1,154 @@
+
+/* laptop */
+@media (min-width: 1024px) and (max-width: 1919px){
+    .main {
+        width: 100%;
+    }
+    .image17{
+        width: 100%;
+    }
+    .centent-bottom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .centent-icon {
+        justify-content: end;
+        margin: 0;
+    }
+    .logo {
+        flex: 1;
+    }
+    .icon-header {
+        margin: 0;
+        justify-content: end;
+        margin-right: 64px;
+
+    }
+    .idvnf{
+        margin: 35px 23px 0 28px;
+    }
+    .icon-group530 {
+        margin: 32px 196px 0 28px;
+    }
+    .group1158-3 {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .group1158-4 {
+        margin-top: 10px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .main {
+        width: 100%;
+    }
+    .image17{
+        width: 100%;
+    }
+    .centent-bottom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .logo {
+        flex: 1;
+    }
+    .icon-header {
+        margin: 0;
+        justify-content: end;
+        margin-right: 64px;
+
+    }
+    .centent-header{
+        flex-wrap: wrap;
+    }
+    .centent-icon {
+        justify-content: end;
+        margin: 0;
+    }
+    .group1158-2{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .group1158-3 {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .group1158-4 {
+        margin-top: 10px;
+        margin-left: 0;
+
+    }
+    .group1158-mid, .group1158-bot {
+        margin: 25px 58px 25px 17px;
+    }
+
+}
+/* Mobile */
+@media (max-width: 739px){
+    .main {
+        width: 100%;
+    }
+    .image17{
+        width: 100%;
+    }
+    .group530 {
+        max-height: 350px;
+        border-radius: 12px;
+    }
+    .logo {
+        flex: 1;
+        /* flex-wrap: wrap; */
+    }
+    .icon-header {
+        margin: 0;
+        /* justify-content: end; */
+        margin-right: 40px;
+    }
+    .welcome {
+        display: none;
+    }
+    .centent-header{
+        display: none;
+    }
+    .content-all {
+        display: block;
+    }
+    .idvnf {
+        margin: 35px 23px 0 16px;
+    }
+    .centent-bottom {
+        display: block;
+        margin: 0px;
+    }
+    .vnfd {
+        margin: 0;
+        margin-left: 40px;
+    }
+    .centent-icon {
+        justify-content: end;
+        margin: 10px 10px 0 0;
+    }
+    .icon-part {
+        margin-right:0;
+    }
+    .group1158-2{
+        margin: 0;
+
+    }
+    .group1158-3 {
+        margin: 0;
+
+    }
+    .group1158-4 {
+        margin: 0;
+
+    }
+    .group1158-mid, .group1158-bot{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .main-centent {
+        height: 100%;
+    }
+}
