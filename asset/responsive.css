@@ -3,13 +3,14 @@
 @media (min-width: 1024px) and (max-width: 1919px){
     .main {
         width: 100%;
-    }
-    .image17{
-        width: 100%;
+        /* height:100%; */
     }
     .centent-bottom {
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-right: 0;
+        /* margin-left: 0px; */
+
     }
     .centent-icon {
         justify-content: end;
@@ -47,6 +48,7 @@
         width: 100%;
     }
     .centent-bottom {
+        display: block;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -81,6 +83,10 @@
     }
     .group1158-mid, .group1158-bot {
         margin: 25px 58px 25px 17px;
+        padding-bottom: 10px;
+    }
+    .group1158-top {
+        padding-top: 10px;
     }
 
 }
@@ -96,14 +102,23 @@
         max-height: 350px;
         border-radius: 12px;
     }
+    .group {
+        margin-left: 10px;
+    }
     .logo {
         flex: 1;
         /* flex-wrap: wrap; */
     }
+    .grid-48 {
+        margin: 10px 12px 10px 20px;
+    }
     .icon-header {
         margin: 0;
         /* justify-content: end; */
-        margin-right: 40px;
+        margin-right: 20px;
+    }
+    .icon-group530 {
+        margin: 32px 16px 0 16px;
     }
     .welcome {
         display: none;
@@ -113,21 +128,24 @@
     }
     .content-all {
         display: block;
+        margin:0 20px;
     }
     .idvnf {
-        margin: 35px 23px 0 16px;
+        margin: 35px 60px 0 16px;
     }
     .centent-bottom {
         display: block;
         margin: 0px;
+        margin: 10px;
     }
     .vnfd {
         margin: 0;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     .centent-icon {
-        justify-content: end;
+        justify-content: space-around;
         margin: 10px 10px 0 0;
+        padding-top: 10px;
     }
     .icon-part {
         margin-right:0;
@@ -147,8 +165,23 @@
     .group1158-mid, .group1158-bot{
         margin-bottom: 20px;
         margin-top: 20px;
+        padding-bottom: 10px;
     }
     .main-centent {
         height: 100%;
     }
+    .dot {
+        display: -webkit-box;
+        height: 16px*1.3*3;
+        font-size: 16px;
+        /* line-height: 1.3; */
+        -webkit-line-clamp: 1;  /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      max-width: 129px;
+  }
+  .group1158-top {
+    padding-top: 10px;
+}
 }
