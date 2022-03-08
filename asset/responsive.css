@@ -99,6 +99,7 @@
     .group1158-top {
         padding-top: 10px;
     }
+    
 
 }
 /* Mobile */
@@ -180,6 +181,7 @@
     }
     .main-centent {
         height: 100%;
+        border-radius: 12px;
     }
     .dot {
         display: -webkit-box;
@@ -278,6 +280,7 @@
     }
     .main-centent {
         height: 100%;
+        border-radius: 12px;
     }
     .dot {
         display: -webkit-box;

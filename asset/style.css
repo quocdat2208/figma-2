@@ -116,7 +116,7 @@ body {
 
 .main-centent {
   background: rgb(33 37 41 / 60%);
-  border-radius: 0px 12px 12px 10px;
+  border-radius: 0px 12px 12px 0px;
 }
 .centent-header {
   display: flex;
