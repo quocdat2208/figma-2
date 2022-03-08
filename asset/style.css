@@ -34,6 +34,14 @@ body {
   margin-right: 64px;
   align-items: center;
 }
+.icon-bars-mobile {
+  font-size: 2.4rem;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+.icon-bars{
+}
 .group {
   margin-left: 24px;
 }
@@ -87,7 +95,6 @@ body {
 .icon-desktop {
   margin-right: 32px;
 }
-
 .idvnf {
   margin: 35px 23px 0 42px;
   font-family: SF Pro Text;
@@ -146,7 +153,7 @@ body {
 }
 .centent-icon {
   display: flex;
-  margin: 15px 14px 0 1230px;
+  justify-content: end;
   align-items: center;
 }
 .icon-list {
