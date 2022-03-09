@@ -49,6 +49,7 @@
     .group1158-4 {
         margin-top: 10px;
     }
+    
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px){
@@ -99,7 +100,9 @@
     .group1158-top {
         padding-top: 10px;
     }
-    
+    .group1158 {
+        margin: 0px;
+      }
 
 }
 /* Mobile */
@@ -200,6 +203,9 @@
 .icon-bars-mobile {
     display: block;
 }
+.group1158 {
+    margin: 0px;
+  }
 }
 /* IP 5 */
 @media (max-width: 320px){

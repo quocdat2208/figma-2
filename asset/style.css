@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  background: url("./img.png") center fixed;
+  background: url("./bg.png") center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -40,8 +40,6 @@ body {
   display: none;
   cursor: pointer;
 }
-.icon-bars{
-}
 .group {
   margin-left: 24px;
 }
@@ -67,10 +65,10 @@ body {
 .content-all {
   display: flex;
   margin: 0px 40px 40px 40px;
-  height: 1032px;
+  height: 100%;
 }
 .group530 {
-    height: 100%;
+    /* height: 100%; */
     background: rgb(116 184 22 / 50%);
     border-radius: 12px 0px 0px 12px;
     flex-direction: row;
@@ -165,11 +163,14 @@ body {
 }
 .centent-bottom {
   display: flex;
+  flex-wrap: wrap;
+  flex: start;
   margin: 52px 20px 0 20px;
 }
 .group1158 {
   background: rgb(52 58 64 / 60%);
   border-radius: 6px;
+  margin: 50px;
 }
 .group1158-top {
   display: flex;
@@ -178,8 +179,6 @@ body {
 .ribbon {
   display: inline;
   background-color: rgb(52, 170, 255);
-}
-.ribbon-text {
   font-family: SF Pro Text;
   font-size: 20px;
   font-style: normal;
