@@ -134,6 +134,7 @@
     }
     .icon-group530 {
         margin: 32px 16px 0 16px;
+        padding: 10px;
     }
     .welcome,.group,.alarm-bell {
         display: none;
