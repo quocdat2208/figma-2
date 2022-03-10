@@ -72,12 +72,13 @@ var arr = [
     },
     {
         name: 'nfv10',
-        infor1:'10vCPU x88',
-        infor2:'10TB HDD',
-        infor3:'10vCPU x86',
-        infor4: '010',
+        infor1:'1vCPU x88',
+        infor2:'1TB HDD',
+        infor3:'1vCPU x86',
+        infor4: '10',
         
     },
+    
 
 ]
 function add_child(items){
@@ -169,8 +170,6 @@ function add_child(items){
     var divI04 = document.createElement("div");
     divI04.setAttribute("class","i04");
     divGroup1158Bot.appendChild(divI04);
-
-    
 
     var btn4 = document.createElement('img');
     btn4.setAttribute("src","./asset/img/3.png");

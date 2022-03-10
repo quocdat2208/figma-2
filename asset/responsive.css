@@ -8,7 +8,7 @@
         
     }
     .group1158,.group1158-2,.group1158-3,.group1158-4 {
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 }
 /* laptop */
@@ -180,9 +180,7 @@
 
     }
     .group1158-mid, .group1158-bot{
-        margin-bottom: 20px;
-        margin-top: 20px;
-        padding-bottom: 10px;
+        margin: 39px 28px 28px 17px;
     }
     .main-centent {
         height: 100%;
@@ -208,9 +206,20 @@
 .group1158 {
     margin: 0px;
   }
+.i1vcpu1,
+.i1vcpu2 {
+  /* padding-right: 54px; */
+  
 }
+.vnfd-text {
+    font-size: 24px;
+    line-height: 6px;
+}
+  
+}
+
 /* IP 5 */
-@media (max-width: 320px){
+@media (max-width: 321px){
     .main {
         width: 100%;
     }
@@ -237,7 +246,8 @@
         margin-right: 20px;
     }
     .icon-group530 {
-        margin: 32px 16px 0 16px;
+        margin: 24px 16px 0 16px;
+        padding-bottom: 5px;
     }
     .welcome,.group,.alarm-bell {
         display: none;
@@ -250,7 +260,7 @@
         margin:0 20px;
     }
     .idvnf {
-        margin: 35px 60px 0 16px;
+        margin: 35px 46px 0 16px;
     }
     .centent-bottom {
         display: block;
@@ -260,6 +270,7 @@
     .vnfd {
         margin: 0;
         margin-left: 20px;
+        line-height: 50px;
     }
     .centent-icon {
         justify-content: space-around;
@@ -282,14 +293,13 @@
 
     }
     .group1158-mid, .group1158-bot{
-        margin-bottom: 20px;
-        margin-top: 20px;
-        padding-bottom: 10px;
+        margin: 10px 0 0 17px;
     }
     .main-centent {
         height: 100%;
         border-radius: 12px;
     }
+    
     .dot {
         display: -webkit-box;
         height: 16px*1.3*3;
@@ -301,10 +311,26 @@
         text-overflow: ellipsis;
       max-width: 129px;
   }
-  .group1158-top {
-    padding-top: 10px;
-}
-.icon-bars-mobile {
-    display: block;
-}
+    .group1158-top {
+        padding-top: 10px;
+        }
+    .icon-bars-mobile {
+        display: block;
+    }
+    .group1158 {
+        margin: 0;
+    }
+    .i1vcpu1,.i1tbhdd,.i1vcpu2 {
+        display: -webkit-box;
+        font-size: 16px;
+        -webkit-line-clamp: 1;  /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      max-width: 64px;
+    }
+    .vnfd-text {
+        font-size: 24px;
+        line-height: 6px;
+    }
 }

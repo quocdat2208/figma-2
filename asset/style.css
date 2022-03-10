@@ -24,7 +24,6 @@ body {
     cursor: pointer;
 }
 .logo {
-  
   flex: 1;
 }
 .icon-header {
@@ -51,13 +50,16 @@ body {
   color: #ffffff;
 }
 .vnfd {
-
   margin-left: 40px;
+
+}
+.vnfd-text {
+
   font-family: SF Pro Display;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 108px;
+  /* line-height: 108px; */
   color: #ffffff;
 }
 .content-all {
@@ -69,8 +71,8 @@ body {
     /* height: 100%; */
     background: rgb(116 184 22 / 50%);
     border-radius: 12px 0px 0px 12px;
-    flex-direction: row;
-}
+  }
+
 .group530-1 {
   display: flex;
 }
@@ -118,7 +120,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 40px 15px 40px;
+  margin: 30px 40px 0 40px;
 }
 
 .flavour {
@@ -136,7 +138,7 @@ body {
   font-size: 32px;
   line-height: 38px;
   text-align: right;
-  color: #ffffff;
+  color: rgb(255 255 255 / 40%);
 }
 .vdu {
   font-family: SF Pro Display;
@@ -162,13 +164,15 @@ body {
 .centent-bottom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  margin: 52px 20px 0 20px;
+  justify-content: flex-start;
+  
+  margin: 52px 0px 0 20px;
 }
 .group1158 {
   background: rgb(52 58 64 / 60%);
   border-radius: 6px;
-  margin: 50px;
+  
+  margin: 0 10px 10px 0;
 }
 .group1158-top {
   display: flex;
