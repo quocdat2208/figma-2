@@ -4,10 +4,11 @@
         width: 100%;
     }
     .centent-bottom{
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
+        
     }
     .group1158,.group1158-2,.group1158-3,.group1158-4 {
-        margin-left: 0;
+        margin-left: 20px;
     }
 }
 /* laptop */

@@ -7,12 +7,10 @@ body {
   
 }
 .main {
-    height: 1244px;
     width:1920px;
   /* background: linear-gradient(292.77deg, #0E1C26 0%, #2A454B 52.6%, #294861 100%); */
 }
-/* .image17 {
-} */
+
 .header-content {
   display: flex;
   align-items: center;
@@ -164,7 +162,7 @@ body {
 .centent-bottom {
   display: flex;
   flex-wrap: wrap;
-  flex: start;
+  justify-content: start;
   margin: 52px 20px 0 20px;
 }
 .group1158 {

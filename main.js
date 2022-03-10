@@ -45,7 +45,40 @@ var arr = [
         infor3:'6vCPU x86',
         infor4: '06',
         
-    }
+    },
+    {
+        name: 'nfv07',
+        infor1:'7vCPU x86',
+        infor2:'7TB HDD',
+        infor3:'7vCPU x86',
+        infor4: '07',
+        
+    },
+    {
+        name: 'nfv08',
+        infor1:'6vCPU x88',
+        infor2:'8TB HDD',
+        infor3:'8vCPU x86',
+        infor4: '08',
+        
+    },
+    {
+        name: 'nfv09',
+        infor1:'9vCPU x86',
+        infor2:'9TB HDD',
+        infor3:'9vCPU x86',
+        infor4: '09',
+        
+    },
+    {
+        name: 'nfv10',
+        infor1:'10vCPU x88',
+        infor2:'10TB HDD',
+        infor3:'10vCPU x86',
+        infor4: '010',
+        
+    },
+
 ]
 function add_child(items){
 
