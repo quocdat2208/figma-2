@@ -1,0 +1,12 @@
+{
+    "label": "Chọn ngôn ngữ:",
+    "welcome": "Xin chào bạn, tungnguyen",
+    "id" : "Địa chỉ:",
+    "vnf-pro" : "Nhà cung cấp:",
+    "vnf-name" : "Tên sản phẩm:",
+    "software" : "Phiên bản phần mềm:",
+    "vnfm" : "Thông tin VNFM:",
+    "version" : "Phiên bản:",
+    "flavour": "Flavour",
+    "vnfindicator": "Chỉ số VNF"
+}

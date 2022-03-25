@@ -1,0 +1,12 @@
+{
+    "label": "Choose a language:",
+    "welcome": "Welcome admin, tungnguyen",
+    "id" : "ID:",
+    "vnf-pro" : "Vnf Provider:",
+    "vnf-name" : "Vnf Product name:",
+    "software" : "Software version:",
+    "vnfm" : "VNFM info:",
+    "version" : "Version:",
+    "flavour": "Flavour",
+    "vnfindicator": "VNF Indicator"
+}

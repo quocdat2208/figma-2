@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="stylesheet" href="./asset/responsive.css">
     <link rel="stylesheet" href="./asset/grid.css">
@@ -68,7 +69,17 @@
           <div class="logo">
             <img class="logo-icon" src="./asset/img/logo.png" alt="logo">
           </div>
-
+          <form>
+            <div class="en-vi">
+              <label>
+                <input type="radio" hidden name="lang" value="en" checked /> EN
+              </label>
+              <div class="space"></div>
+              <label>
+                <input type="radio" hidden name="lang" value="vi" /> VI
+              </label>
+            </div>
+          </form>
           <div class="icon-header">
             <div class="icon-bars-mobile">
               <i class="icon-bars fas fa-bars"></i>
@@ -80,7 +91,7 @@
             <img src="./asset/img/info.png" alt="">
           </div>
           <div class="welcome">
-            <p>Welcome admin, tungnguyen</p>
+            <p data-i18n = "welcome">Welcome admin, tungnguyen</p>
           </div>
         </div>
 
@@ -98,12 +109,12 @@
           
             <div class="group530-1">
               <div class="idvnf">
-                <div class="idvnf-item">ID:</div>
-                <div class="idvnf-item">Vnf Provider:</div>
-                <div title="Vnf Product name" class="idvnf-item dot">Vnf Product name:</div>
-                <div title="Software version" class="idvnf-item dot">Software version:</div>
-                <div class="idvnf-item">VNFM info:</div>
-                <div class="idvnf-item">Version:</div>
+                <div data-i18n = "id" class="idvnf-item">ID:</div>
+                <div data-i18n = "vnf-pro" class="idvnf-item">Vnf Provider:</div>
+                <div data-i18n = "vnf-name" title="Vnf Product name" class="idvnf-item dot">Vnf Product name:</div>
+                <div data-i18n = "software" title="Software version" class="idvnf-item dot">Software version:</div>
+                <div data-i18n = "vnfm" class="idvnf-item">VNFM info:</div>
+                <div data-i18n = "version" class="idvnf-item">Version:</div>
                 </div>
               <div class="viettel">
                 <div class="viettel-item">0001</div>
@@ -141,20 +152,27 @@
             
         <div class="centent-header">
           
-            <div class="flavour">Flavour</div>
+            <div data-i18n = "flavour" class="flavour">Flavour</div>
           
           
             <div class="vdu" >VDU</div>
           
           
-            <div class="vnfindicator" >VNF Indicator</div>
+            <div data-i18n = "vnfindicator" class="vnfindicator" >VNF Indicator</div>
           
 
         </div>
         <div class="centent-icon">
-          
-            <img class="icon-search" src="./asset/img/search.png" alt="">
-          
+            
+            <div class="searchBox">
+              
+                <input data-i18n = "search" class="searchInput" type="search" name="q" placeholder="Search ...">
+                <button class="searchButton" type="submit" onclick="mySearch()">
+                <img class="icon-search" src="./asset/img/search.png" alt="">
+                
+                </button>
+                
+            </div>
           
             <img class="icon-list" src="./asset/img/list.png" alt="">
           
@@ -164,12 +182,31 @@
         </div>
         
         <div id="myId" class="centent-bottom">
-          
+          <p class="myId-note" style="display: none"></p>
         </div>
+        <!-- Paging -->
+        <div class="content__paging">
+          <ul>
+              <li class="btn-prev btn-active fa-solid fa-angle-left"></li>
+              <div class="number-page" id="number-page">
+                  <!-- <li class="active">
+                      <a>1</a>
+                  </li>
+                  <li>
+                      <a>2</a>
+                  </li>
+                  <li>
+                      <a>3</a>
+                  </li> -->
+              </div>
+              <li class="btn-next fa-solid fa-angle-right"></li>
+          </ul>
+      </div>
         </div>
         </div> <!-- End content-all -->
       <!-- </div> -->
     </div>
     <script src="./main.js"></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
