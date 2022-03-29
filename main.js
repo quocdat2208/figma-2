@@ -1,5 +1,4 @@
 var cards = [
-    
   {
     name: "nfvo1",
     infor1: "1vCPU x86",
@@ -209,199 +208,275 @@ var cards = [
     infor4: "01",
     iconInfor4: "./asset/img/3.png",
   },
-  
-  
-  
-  
-
-]
+];
 let perPage = 4;
-  let currentPage = 1;
-  let start = 0;
-  let end = perPage;
-  const totalPages = Math.ceil(cards.length / perPage);
-  // console.log(totalPages);
-  const btnNext = document.querySelector('.btn-next');
-  const btnPrev = document.querySelector('.btn-prev');
-  const btnActive = document.querySelector('.btn-active');
-  const active = document.querySelector('.active')
+let currentPage = 1;
+let start = 0;
+let end = perPage;
+const totalPages = Math.ceil(cards.length / perPage);
+const btnNext = document.querySelector(".btn-next");
+const btnPrev = document.querySelector(".btn-prev");
+const btnActive = document.querySelector(".btn-active");
+const active = document.querySelector(".active");
 
-
-  function getCurrentPage(currentPage){
-    start = (currentPage - 1) * perPage;
-    end = currentPage * perPage;
-    // console.log(start, end);
+const searchButton = document.querySelector(".searchButton");
+let elements = document.getElementsByClassName("group1158");
+let myId = document.getElementById("myId");
+let myIdNote = document.querySelector(".myId-note");
+const searchInput = document.querySelector(".searchInput");
+let valueItem = searchInput.value;
+let nfvNumber = document.querySelector(".nfv_number");
+let btnStart = document.querySelector(".btn-start");
+let btnEnd = document.querySelector(".btn-end");
+function renderCard(){
+  for (let i = 0; i < elements.length; i++) {
+    if (i >= start && i < end) {
+      elements[i].style.display = "block";
+    } else {
+      elements[i].style.display = "none";
+    }
   }
-function add_child(items){
-
-    html = "";
-    const content = cards.map((item, index) => {
-      if (index >= start && index < end) {
-        html += '<div class="group1158">';
-        html += '<div class="group1158-top">';
-        html += '<div class="ribbon">';
-        html += '<p class="nfv_number" style="margin: 0px;">' + item.name + "</p>";
-        html += "</div>";
-        html += '<div class="triangle-right">';
-        html += "</div>";
-        html += "</div>";
-        html += '<div class="group1158-mid">';
-        html += '<div class="cpt-chip1">';
-        html += "<img src=" + item.iconInfor1 + ">";
-        html += "</div>";
-        html += '<div class="i1vcpu1">';
-        html += '<p style="color: white;">' + item.infor1 + "</p>";
-        html += "</div>";
-        html += '<div class="cpt-hd">';
-        html += "<img src= " + item.iconInfor2 + ">";
-        html += "</div>";
-        html += '<div class="i1tbhdd">';
-        html += '<p style="color: white;">' + item.infor2 + "</p>";
-        html += "</div>";
-        html += "</div>";
-        html += '<div class="group1158-bot">';
-        html += '<div class="cpt-ram1">';
-        html += "<img src=" + item.iconInfor3 + ">";
-        html += "</div>";
-        html += '<div class="i1vcpu2">';
-        html += '<p style="color: white;">' + item.infor3 + "</p>";
-        html += "</div>";
-        html += '<div class="cpt-monitor">';
-        html += "<img src=" + item.iconInfor3 + ">";
-        html += "</div>";
-        html += '<div class="i04">';
-        html += '<p style="color: white;">' + item.infor4 + "</p>";
-        html += "</div>";
-        html += "</div>";
-        html += "</div>";
-        return html;
-      }
-  
-    });
-    document.getElementById("myId").innerHTML = html;
-
 }
+function getCurrentPage() {
+  start = (currentPage - 1) * perPage;
+  end = currentPage * perPage;
+}
+function renderHtml(items) {
+  myIdNote.style.display = "none";
+  html = "";
+  for (let i = 0; i < cards.length; i++) {
+    html += `
+  <div class="group1158">    
+                    <div class="group1158-top">
+                        <div class="ribbon">
+                            <p class="nfv_number" style="margin: 0px;">${cards[i].name}</p>
+                        </div>
+                        <div class="triangle-right">
+                        </div>
+                    </div>
+
+                    <div class="group1158-mid">
+                            <div class="cpt-chip1">
+                                <img src=${cards[i].iconInfor1}>
+                            </div>
+                            <div class="i1vcpu1">
+                                <p style="color: white;">${cards[i].infor1}</p>
+                            </div>
+                            <div class="cpt-hd">
+                                <img src=${cards[i].iconInfor2}>
+                            </div>
+                            <div class="i1tbhdd">
+                                <p style="color: white;">${cards[i].infor2}</p>
+                            </div>
+                    </div>
+                    
+                    <div class="group1158-bot">
+                                <div class="cpt-ram1">
+                                    <img src=${cards[i].iconInfor3}>
+                                </div>
+                                <div class="i1vcpu2">
+                                    <p style="color: white;">${cards[i].infor3}</p>
+                                </div>
+                                <div class="cpt-monitor">
+                                    <img src=${cards[i].iconInfor4}>
+                                </div>
+                                <div class="i04">
+                                    <p style="color: white;">${cards[i].infor4}</p>
+                                </div>
+                    </div>
+                </div>
+  `;
+    document.getElementById("myId").innerHTML = html;
+  }
+
+  renderCard()
+}
+
 renderListPage();
-  function renderListPage(){
-    let html = '';
-    html += `<li class="active"> <a>${1}</a></li>`;
-    for(let i = 2; i <= totalPages; i++){
-        html += `<li><a>${i}</a></li>`
-    }
-
-    document.getElementById("number-page").innerHTML = html;
-  }
-  
-
-  function changPage(){
-    const currentPages = document.querySelectorAll('.number-page li');
-    console.log(currentPages)
-
-    for(let i = 0; i < currentPages.length; i++){
-      currentPages[i].addEventListener('click', ()=> {
-        let value = i+1;
-        currentPage = value;
-        document.querySelector('.active').classList.remove('active');
-        currentPages[i].classList.add('active');
-        if(currentPage > 1 && currentPage < totalPages){
-          btnPrev.classList.remove('btn-active');
-          btnNext.classList.remove('btn-active');
-        }
-        if(currentPage === 1){
-          btnPrev.classList.add('btn-active');
-          btnNext.classList.remove('btn-active');
-        }
-        if(currentPage === totalPages){
-          btnNext.classList.add('btn-active');
-          btnPrev.classList.remove('btn-active');
-        }
-        getCurrentPage(currentPage);
-        add_child()
-      })
-    }
+function renderListPage() {
+  // myIdNote.style.display= 'none';
+  let html = "";
+  html += `<li class="active"> <a>${1}</a></li>`;
+  for (let i = 2; i <= totalPages; i++) {
+    html += `<li><a>${i}</a></li>`;
   }
 
-changPage()
+  document.getElementById("number-page").innerHTML = html;
+}
+let x = 0;
+function changePage() {
+  const currentPages = document.querySelectorAll(".number-page li");
+  // const btnNav = document.querySelectorAll('.content__paging li')
+  // console.log(btnNav);
+
+
+  for (let i = 0; i < currentPages.length; i++) {
+    currentPages[i].addEventListener("click", () => {
+      let value = i + 1;
+      currentPage = value; // hiển thị số trang hiện tại
+      // currentPage = currentPages[i].textContent;
+      // console.log(currentPage);
+      document.querySelector(".active").classList.remove("active");
+      currentPages[i].classList.add("active");
+      if (currentPage > 1 && currentPage < totalPages) {
+        btnPrev.classList.remove("btn-active");
+        btnNext.classList.remove("btn-active");
+        btnEnd.classList.remove("btn-active");
+        btnStart.classList.remove("btn-active");
+      }
+      else if (currentPage === 1) {
+        btnPrev.classList.add("btn-active");
+        btnStart.classList.add("btn-active");
+        btnNext.classList.remove("btn-active");
+        btnEnd.classList.remove("btn-active");
+      }
+      else if (currentPage === totalPages) {
+        btnNext.classList.add("btn-active");
+        btnEnd.classList.add("btn-active");
+        btnPrev.classList.remove("btn-active");
+        btnStart.classList.remove("btn-active");
+      }
+      getCurrentPage(currentPage);
+      renderHtml();
+      // console.log(totalPages)
+
+      for (let j = 0; j < elements.length; j++) {
+        if (j >= perPage * i && j < (i + 1) * perPage) {
+          elements[j].style.display = "block";
+        } else {
+          elements[j].style.display = "none";
+        }
+      }
+      // return currentPage;
+      // console.log(currentPage);
+    });
+  }
+  return currentPage;
+}
+// console.log(changePage());
+
+changePage();
 
 btnNext.addEventListener("click", () => {
-        currentPage++;
-        if(currentPage > totalPages){
-            currentPage = totalPages;
-        }
+  
+  myIdNote.style.display = "none";
+  currentPage++;
 
-        if(currentPage === totalPages){
-          btnNext.classList.add('btn-active');
-        }
-        btnPrev.classList.remove('btn-active');
-        document.querySelector('.active').classList.remove('active')
-        document.querySelectorAll('.number-page li')[(currentPage - 1)].classList.add('active')
-        
-        
-        getCurrentPage(currentPage)
-        add_child()
-    })
+  if (currentPage > totalPages) {
+    currentPage = totalPages;
+  }
+  if (currentPage === totalPages) {
+    btnNext.classList.add("btn-active");
+    btnEnd.classList.add("btn-active");
+  }
+  btnPrev.classList.remove("btn-active");
+  btnStart.classList.remove("btn-active");
+  document.querySelector(".active").classList.remove("active");
+  document.querySelectorAll(".number-page li")[currentPage - 1].classList.add("active");
+  // console.log(start, end);
+
+  getCurrentPage(currentPage);
+  renderHtml();
+  renderCard()
+});
+btnEnd.addEventListener("click", () => {
+  currentPage = totalPages;
+
+  btnNext.classList.add("btn-active");
+  btnEnd.classList.add("btn-active");
+  btnPrev.classList.remove("btn-active");
+  btnStart.classList.remove("btn-active");
+  document.querySelector(".active").classList.remove("active");
+  document.querySelectorAll(".number-page li")[currentPage - 1].classList.add("active");
+
+  
+  getCurrentPage(currentPage);
+  renderHtml();
+  
+  
+});
+
+
 
 btnPrev.addEventListener("click", () => {
-    currentPage--;
-    if(currentPage <= 1){
-        currentPage = 1;
-    }
-    if(currentPage === 1) {
-      btnPrev.classList.add('btn-active');
-    }
-    btnNext.classList.remove('btn-active');
-    document.querySelector('.active').classList.remove('active')
-    document.querySelectorAll('.number-page li')[(currentPage - 1)].classList.add('active')
-    getCurrentPage(currentPage)
-    add_child()
-})
-function some(){
-    for (let i = 0; i <cards.length;i++){
-        add_child(cards[i]);
-    }
+  myIdNote.style.display = "none";
+  currentPage--;
+  if (currentPage <= 1) {
+    currentPage = 1;
+  }
+  if (currentPage === 1) {
+    btnPrev.classList.add("btn-active");
+    btnStart.classList.add("btn-active");
+  }
+  btnNext.classList.remove("btn-active");
+  btnEnd.classList.remove("btn-active");
+  document.querySelector(".active").classList.remove("active");
+  document
+    .querySelectorAll(".number-page li")
+    [currentPage - 1].classList.add("active");
+  getCurrentPage(currentPage);
+  renderHtml();
+  renderCard()
+});
+
+btnStart.addEventListener("click", () => {
+  currentPage = 1;
+
+  btnPrev.classList.add("btn-active");
+  btnStart.classList.add("btn-active");
+  btnNext.classList.remove("btn-active");
+  btnEnd.classList.remove("btn-active");
+
+  document.querySelector(".active").classList.remove("active");
+  document.querySelectorAll(".number-page li")[currentPage - 1].classList.add("active");
+  
+  getCurrentPage(currentPage);
+  renderHtml();
+});
+
+
+// --------------------------------------------------------
+function some() {
+  for (let i = 0; i < cards.length; i++) {
+    renderHtml(cards[i]);
+  }
 }
 
-// JS Search
+function mySearch() {
+  renderHtml(cards);
+  const searchInput = document.querySelector(".searchInput");
+  let valueItem = searchInput.value;
+  let k = 0;
 
-const searchButton = document.querySelector('.searchButton');
-
-let elements = document.getElementsByClassName('group1158');
-let myId = document.getElementById('myId')
-let myIdNote = document.querySelector('.myId-note');
-const searchInput = document.querySelector('.searchInput');
-let valueItem = searchInput.value;
-
-function mySearch(){
-    // let myId = document.getElementById('myId')
-    const searchInput = document.querySelector('.searchInput');
-    let valueItem = searchInput.value;
-    let k = 0;
+  Array.from(elements).forEach(function (ele) {
+    let nameItem = ele.querySelector(".nfv_number").textContent;
+    if (valueItem === "") {
+      k++;
+      getCurrentPage(changePage());
+      renderCard();
+    } else if (nameItem.indexOf(valueItem) !== -1) {
+      
+      ele.style.display = "block";
+      k++;
+      myIdNote.style.display = "none";
+    } else {
+      ele.style.display = "none";
+    }
     
-    Array.from(elements).forEach(function(ele){
-        let nameItem = ele.querySelector('.nfv_number').textContent;
-
-        if (nameItem.indexOf(valueItem) !== -1) {
-            ele.style.display = 'block';
-            k++;
-            myIdNote.style.display= 'none';
-        } else {
-            ele.style.display = 'none';
-        }
-        if(k === 0) {
-            myIdNote.style.display= 'block';
-            myIdNote.textContent = `Không tồn tại kết quả "${valueItem}"`
-            myIdNote.style.fontSize = '40px'
-            myIdNote.style.color = 'white'
-            } else {
-                myIdNote.textContent = ``
-            } 
-    });
-}
-searchInput.addEventListener("keyup", function(event){
-    if(event.keyCode === 13){
-        event.preventDefault();
-        searchButton.click();
+    if (k === 0) {
+      ele.style.display = "none";
+      myIdNote.style.display = "block";
+      myIdNote.textContent = `Không tồn tại kết quả "${valueItem}"`;
+      myIdNote.style.fontSize = "40px";
+      myIdNote.style.color = "white";
+    } else {
+      myIdNote.textContent = ``;
     }
-})
-// Languages
-
+  });
+}
+searchInput.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    searchButton.click();
+  }
+});
